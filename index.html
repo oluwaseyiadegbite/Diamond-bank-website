@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIAMONDBANK</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+<style>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #115703f3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .website-name {
+            display: inline-block;
+            vertical-align: middle;
+            text-decoration: none;
+            color:bisque;
+            font-style: italic;
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px; /* Adjust the margin as needed */
+            width: 100px;
+        }
+
+        .search-bar {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px; /* Adjust the margin as needed */
+            width: 300px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+</style>
+
+
+    
+</head>
+
+<body>
+    <header>
+
+
+
+        <div class="website-name">
+            <a href="index.html"></a>
+          <h1>DIAMOND BANK</h1></a>
+        </div>
+        <div class="logo">
+            <img src="dia.jpg.webp" alt="Logo" width="50" height="50" >
+        </div>
+        <form action="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwidm7rduoaDAxWeaUEAHecmCjUQPQgJ" method="get">
+            <div class="search-bar">
+                <input type="text" name="q" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+  
+<hr>
+        <nav>
+            <a href="index.html" class="button" title="HOME">🏠</a>
+            <a href="business.html" title=" market" style="text-decoration: underline;">Business</a>
+            <a href="private.html" title="private" style="text-decoration: underline;">Private Banking</a>
+            <a href="personal.html"  title="your account" style="text-decoration: underline;">Personal</a>
+            <a href="inter.html" title="word wide" style="text-decoration: underline;">International Banking</a>
+            <a href="CON.HTML" title="HELP" style="text-decoration: underline;">☎️CONTACT US</a>
+        </nav>  
+
+    </header  >
+
+    <div class="container">
+        <form id="signInForm">
+            <h2>SIGN IN/ REGISTER</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <button type="button" onclick="signIn()" style="color: #d3e2d3;" class="button">Sign In/register</button>
+    
+            <div class="loader" id="loader"></div>
+    
+        </form>
+    </div>
+
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="pence.jpeg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="phonee.png" alt="Slide 2">
+            </div>
+        </div>
+        <div class="controls">
+            <div class="control-btn" onclick="prevSlide()">&#9666;</div>
+            <div class="control-btn" onclick="nextSlide()">&#9656;</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-text">
+            <p> <h1 style="color: darkgreen;">Explore all we have to offer. </h1> <br>See how we can help you with current accounts, mortgages, insurance, loans, credit cards, and savings accounts.</p>
+            <a href="https://www.diamond.bank/career-opportunities" class="button">GET STARTED 👀</a>
+
+        </div> 
+        <img class="side-image" src="IMG_8805.jpg" alt="Side Image" >
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            if (currentSlide < slider.children.length - 1) {
+                currentSlide++;
+            } else {
+                currentSlide = 0;
+            }
+            updateSliderPosition();
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+            } else {
+                currentSlide = slider.children.length - 1;
+            }
+            updateSliderPosition();
+        }
+
+        function updateSliderPosition() {
+            const newTranslate = -currentSlide * 100; // Assuming each slide is 100%
+            slider.style.transform = `translateX(${newTranslate}%)`;
+        }
+    </script>
+    
+<footer>
+<p>
+    <h1 style="position: absolute;">  Important information </h1> 
+
+</p>
+<br><br>
+<br>
+<br>
+<br>
+<p>
+<li> must be 16 or over and have a Diamond current account, mortgage account or a Barclaycard to use the Barclays app. If you're 11 to 15, you can use another version of the app. <A href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwixoYC18YqDAxWP9rsIHfSnCLYQPQgK" >Terms and conditions apply.</A> </li>
+</p>
+<hr>
+<h3>
+   DIAMOND Bank UK PLC and  DIAMOND Bank PLC are each authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority.
+
+   DIAMOND'S Insurance Services Company Limited and  DIAMOND'S Investment Solutions Limited are each authorised and regulated by the Financial Conduct Authority.
+    
+    Registered office 
+
+
+
+
+
+
+
+
+
+</h3>
+
+
+
+<hr style="color: darkgreen;">
+<p>
+
+    🇬🇧UNITED KINGDOM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    @COPY RIGHT: ALL RIGHT'S ARE SERVERED       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                       © 2023 DIAMOND BANK, INC
+</p>
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+    <script src="SCRIPT.JS"></script>
+    
+</body>
+</html>

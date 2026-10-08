@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #006400; /* Dark green background color */
+    color: #fff; /* Text color */
+    padding: 10px;
+    text-align: centers;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Link color */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%; /* Take full width of the viewport */
+    max-width: 1600px; /* Set the maximum width of the slider */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 900px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control-btn {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-text {
+    max-width: 40%;
+}
+
+.side-image {
+    max-width: 60%;
+    height: auto; 
+}
